@@ -7,7 +7,18 @@ const Statistics = ({ title, stats }) => (
     {title && <h2 className={s.title}>{title}</h2>}
     <ul className={s.statlist}>
       {stats.map(({ id, label, percentage }) => (
-        <li className={s.item} key={id}>
+        <li
+          style={{
+            backgroundColor: `${
+              '#' +
+              (Math.random().toString(16) + '000000')
+                .substring(2, 8)
+                .toUpperCase()
+            }`,
+          }}
+          className={s.item}
+          key={id}
+        >
           <span className={s.label}>{label}</span>
           <span className={s.percentage}>{percentage}%</span>
         </li>
@@ -23,7 +34,7 @@ Statistics.propTypes = {
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,
-   }),
+    }),
   ),
 };
 

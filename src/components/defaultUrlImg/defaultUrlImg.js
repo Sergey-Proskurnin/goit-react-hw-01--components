@@ -1,3 +1,4 @@
-const defaultUrlImg = "https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg"
+const defaultUrlImg =
+  'https://www.flaticon.com/svg/static/icons/svg/3135/3135715.svg';
 
-export default defaultUrlImg 
+export default defaultUrlImg;

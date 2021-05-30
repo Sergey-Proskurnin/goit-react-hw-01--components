@@ -3,8 +3,6 @@ import PropTypes from 'prop-types';
 import s from './Profile.module.css';
 import defaultUrlImg from '../defaultUrlImg/defaultUrlImg';
 
-console.log();
-
 const Profile = ({ name, tag, location, avatar, stats }) => (
   <div className={s.container}>
     <div className={s.description}>

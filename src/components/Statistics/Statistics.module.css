@@ -25,21 +25,20 @@
   flex-wrap: wrap;
   background: rgb(111, 156, 235);
   color: #fff;
- }
+}
 
 .item {
   display: flex;
   flex-direction: column;
   border: solid 1px rgb(220, 231, 250);
   flex-basis: calc(100% / 5);
-
 }
 
 .label {
-  padding-top: 15px;  
+  padding-top: 15px;
 }
-.percentage{
-    padding-top: 15px;
-    padding-bottom: 20px;
-    font-size: 22px;
+.percentage {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  font-size: 22px;
 }

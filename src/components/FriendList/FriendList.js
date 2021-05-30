@@ -1,14 +1,15 @@
-import React from "react"
+import React from 'react';
 import PropTypes from 'prop-types';
 import defaultUrlImg from '../defaultUrlImg/defaultUrlImg';
+import s from './FriendList.module.css';
 
 const FriendList = ({ friends }) => (
-  <ul className="friend-list">
+  <ul className={s.friendList}>
     {friends.map(({ avatar = defaultUrlImg, name, isOnline, id }) => (
-      <li className="item" key={id}>
-        <span className="status" data-source={isOnline}></span>
-        <img className="avatar" src={avatar} alt={name} width="48" />
-        <p className="name">{name}</p>
+      <li className={s.item} key={id}>
+        <span className={isOnline ? s.statusOnline : s.statusOffline}></span>
+        <img className={s.avatar} src={avatar} alt={name} width="48" />
+        <p className={s.name}>{name}</p>
       </li>
     ))}
   </ul>
