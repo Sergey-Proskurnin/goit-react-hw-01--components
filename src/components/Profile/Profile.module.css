@@ -11,12 +11,13 @@
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+  
 }
 .description {
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .avatar {
-  margin-top: 40px;
   border-radius: 50%;
   object-fit: cover;
   margin-left: auto;
@@ -26,8 +27,12 @@
   height: 132px;
 }
 .name {
+  margin-top: 24px;
   font-size: 24px;
   font-weight: 600;
+}
+.location, .tag{
+  margin-top: 20px;
 }
 
 .stats {
@@ -36,6 +41,7 @@
   /* line-height: 1.5em; */
   background: rgb(245, 248, 253);
 }
+
 
 .stats li {
   display: flex;
